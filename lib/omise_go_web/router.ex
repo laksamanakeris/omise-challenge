@@ -23,6 +23,7 @@ defmodule OmiseGoWeb.Router do
   scope "/api", OmiseGoWeb do
     pipe_through :api
 
+    post "/converter", ConverterController, :index
     get "/health", PageController, :health
   end
 end
