@@ -20,7 +20,9 @@ defmodule OmiseGoWeb.Router do
   end
 
   # Other scopes may use custom stacks.
-  # scope "/api", OmiseGoWeb do
-  #   pipe_through :api
-  # end
+  scope "/api", OmiseGoWeb do
+    pipe_through :api
+
+    get "/health", PageController, :health
+  end
 end
