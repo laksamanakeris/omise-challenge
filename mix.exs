@@ -19,7 +19,7 @@ defmodule OmiseGo.MixProject do
   def application do
     [
       mod: {OmiseGo.Application, []},
-      extra_applications: [:logger, :runtime_tools,:timex]
+      extra_applications: [:logger, :runtime_tools, :timex, :httpoison]
     ]
   end
 
@@ -39,7 +39,8 @@ defmodule OmiseGo.MixProject do
       {:gettext, "~> 0.11"},
       {:jason, "~> 1.0"},
       {:plug_cowboy, "~> 2.0"},
-      {:timex, "~> 3.1"}
+      {:timex, "~> 3.1"},
+      {:httpoison, "~> 1.4"}
     ]
   end
 end
