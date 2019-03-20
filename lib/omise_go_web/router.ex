@@ -24,6 +24,7 @@ defmodule OmiseGoWeb.Router do
     pipe_through :api
 
     post "/converter", ConverterController, :index
+    get "/github-search", GithubSearchController, :index
     get "/health", PageController, :health
   end
 end
