@@ -18,6 +18,6 @@
 <section class="row">
   <%# <%= pagination_links(@page, view_style: :bootstrap) %>
   <%# <%= pagination_links @conn, [distance: 5, next: ">>", previous: "<<", first: true, last: true, view_style: :bootstrap] %>
-  <%= pagination_links @page, distance: 5, next: ">>", previous: "<<", first: ["←"], last: ["→"], view_style: :bootstrap %>
+  <%= pagination_links @page, distance: 5, next: "Next", previous: "Prev", first: ["First"], last: ["Last"], view_style: :bootstrap_v4, per_page: @page.page_size %>
 
 </section>

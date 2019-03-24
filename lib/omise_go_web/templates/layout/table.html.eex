@@ -6,16 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>OmiseGo · Phoenix Framework</title>
     <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/app.css") %>"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <style>
 
+    .td-git{
+        background-color: #f5f5f5;
+    }
+    .td-git:hover{
+        background-color: #fff;
+    }
     .item-git{
         font-size: 12px;
-        max-width: 80px;
+        max-width: 100px;
+        max-height: 150px;
+        overflow: scroll;
+        text-align: justify;
+        padding: 10px;
     }
 
     .container-git{
-        max-width: 120.0rem;
+        max-width: 140.0rem;
     }
     </style>
   </head>

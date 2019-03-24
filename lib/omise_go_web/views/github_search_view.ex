@@ -16,7 +16,7 @@ defmodule OmiseGoWeb.GithubSearchView do
 
   def populate_columns(content) do
     Enum.map(content, fn(item) ->
-      content_tag(:td, render_item(item), class: "")
+      content_tag(:td, render_item(item), class: "td-git")
     end)
   end
 

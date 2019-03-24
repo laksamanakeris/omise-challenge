@@ -1,6 +1,6 @@
 <div class="item-git">
-<%= @item.full_name %><br/>
-<%= @item.description %><br/>
-
-<a href="<%= @item.html_url %>" target="blank">Link</a><br/>
+<a href="<%= @item.html_url %>" target="blank">
+    <%= @item.full_name %><br/>
+    <%= @item.description %><br/>
+</a>
 </div>
