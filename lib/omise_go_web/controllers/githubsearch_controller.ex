@@ -12,7 +12,7 @@ defmodule OmiseGoWeb.GithubSearchController do
 
     case GithubSearch.query_page(query, page_num, per_page) do
       {:ok, page} -> 
-        render(conn, "github.html", query: query, page: page)
+        render(conn, "github.html", query: query, page: page, layout: {OmiseGoWeb.LayoutView, "table.html"})
       {:error, message} ->
         conn
         |> put_status(404)
