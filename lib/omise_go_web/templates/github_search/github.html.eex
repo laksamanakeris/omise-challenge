@@ -1,0 +1,12 @@
+<section>
+  <h1>Search: <strong><%= @query %></strong></h1>
+  
+</section>
+
+<section class="row">
+  <%= generate_result_table(@page.entries, 10) %>
+</section>
+
+<section class="row">
+  <%= pagination_links @page, distance: 5, next: "Next", previous: "Prev", first: ["First"], last: ["Last"], view_style: :bootstrap_v4, per_page: @page.page_size %>
+</section>

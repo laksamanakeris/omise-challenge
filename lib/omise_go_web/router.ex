@@ -17,10 +17,14 @@ defmodule OmiseGoWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+    get "/github-search/:query", GithubSearchController, :index
   end
 
   # Other scopes may use custom stacks.
-  # scope "/api", OmiseGoWeb do
-  #   pipe_through :api
-  # end
+  scope "/api", OmiseGoWeb do
+    pipe_through :api
+
+    post "/converter", ConverterController, :index
+    get "/health", PageController, :health
+  end
 end
